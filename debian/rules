@@ -1,0 +1,99 @@
+#!/usr/bin/make -f
+#
+
+package = debian-zh-faq
+SHELL = /bin/sh
+d = debian/$(bin-package)
+
+subpkgs = s t
+s_locale = zh_CN
+t_locale = zh_TW
+locale = $($(subpkg)_locale)
+binary_subpkgs = $(addprefix binary_,$(subpkgs))
+install_subpkgs = $(addprefix install_,$(subpkgs))
+clean_subpkgs = $(addprefix clean_,$(subpkgs))
+bin-package = $(package)-$(subpkg)
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# This is the debhelper compatibility version to use.
+export DH_COMPAT=1
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+
+	# Add here commands to compile the package.
+	$(MAKE)
+
+	touch build-stamp
+
+clean: $(clean_subpkgs)
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+
+	# Add here commands to clean up after the build process.
+	-$(MAKE) distclean
+
+	cd debian \
+	&& for i in copyright README.Debian; do \
+		slice	-o UNDEFuCN:debian-zh-faq-s.$$i \
+			-o UNDEFuTW:debian-zh-faq-t.$$i.tmp \
+			$$i.in ; \
+		autob5 < debian-zh-faq-t.$$i.tmp > debian-zh-faq-t.$$i ; \
+		rm -f debian-zh-faq-t.$$i.tmp ; \
+	done \
+	&&	slice	-o UNDEFuCN:debian-zh-faq-s.doc-base \
+			-o UNDEFuTW:debian-zh-faq-t.doc-base \
+			in.doc-base
+
+$(clean_subpkgs): subpkg = $(patsubst clean_%,%,$@) 
+$(clean_subpkgs): DH_OPTIONS = -p$(bin-package) -P$(d)
+$(clean_subpkgs):
+	dh_testdir $(DH_OPTIONS)
+	dh_testroot $(DH_OPTIONS)
+	dh_clean $(DH_OPTIONS)
+
+install: build $(install_subpkgs)
+$(install_subpkgs): subpkg = $(patsubst install_%,%,$@)
+$(install_subpkgs): DH_OPTIONS = -p$(bin-package) -P$(d)
+$(install_subpkgs): build
+	dh_testdir $(DH_OPTIONS)
+	dh_testroot $(DH_OPTIONS)
+	dh_clean -k $(DH_OPTIONS)
+	dh_installdirs $(DH_OPTIONS)
+
+# Build architecture-independent files here.
+binary-indep: build install $(binary_subpkgs)
+$(binary_subpkgs): subpkg = $(patsubst binary_%,%,$@)
+$(binary_subpkgs): DH_OPTIONS = -p$(bin-package) -P$(d)
+$(binary_subpkgs): build install
+	dh_testdir $(DH_OPTIONS)
+	dh_testroot $(DH_OPTIONS)
+	dh_installdocs $(DH_OPTIONS) \
+		debian-zh-faq.$(locale).ps.gz
+#		debian-zh-faq.$(locale).ps.gz $(locale)/html
+	dh_installdocs $(DH_OPTIONS) \
+		debian-zh-faq.en.ps.gz 
+#	for i in frames noframes; do ( \
+#		&& rm -f *.pl *.tex *.log *.aux *.idx WARNINGS \
+#	); done	
+#		cd $(d)/usr/share/doc/$(package)-$(subpkg)/html/$$i 
+	dh_installchangelogs $(DH_OPTIONS)
+	dh_link $(DH_OPTIONS)
+	dh_compress $(DH_OPTIONS)
+	dh_fixperms $(DH_OPTIONS)
+	dh_installdeb $(DH_OPTIONS)
+	dh_gencontrol $(DH_OPTIONS)
+	dh_md5sums $(DH_OPTIONS)
+	dh_builddeb $(DH_OPTIONS)
+
+# Build architecture-dependent files here.
+binary-arch: build install
+# We have nothing to do by default.
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install \
+	$(subpkgs) $(install_subpkgs) $(binary_subpkgs) $(clean_subpkgs)

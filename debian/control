@@ -1,0 +1,28 @@
+Source: debian-zh-faq
+Section: doc
+Build-Depends: debhelper (>= 2.0.72), latex-cjk-chinese, gs, slice, zh-autoconvert, latex-cjk-chinese-arphic-bsmi00lp, latex-cjk-chinese-arphic-bkai00mp, latex-cjk-chinese-arphic-gbsn00lp, latex-cjk-chinese-arphic-gkai00mp, dvipdfmx
+Priority: optional
+Maintainer: Yu Guanghui <ygh@debian.org>
+Standards-Version: 3.5.2
+
+Package: debian-zh-faq-s
+Architecture: all
+Description: Debian Chinese FAQ (Chinese GB)
+ This packages contains the book Debian_Chinese_FAQ (Simplified Chinese
+ GB Version), and it answers some frequently asked question about Chinese
+ environment setup.  It also introduce the special Chinese software
+ in Debian.  Hope it can make you easy to use Chinese in the Debian
+ Operating System.
+ .
+ You may find the installed items under /usr/doc/debian-zh-faq-s.
+
+Package: debian-zh-faq-t
+Architecture: all
+Description: Debian Chinese FAQ (Chinese Big5)
+ This packages contains the book Debian_Chinese_FAQ (Traditional Chinese
+ Big5 Version), and it answers some frequently asked question about Chinese
+ environment setup.  It also introduces the special Chinese software
+ in Debian.  Hope it can make you easy to use Chinese in the Debian
+ Operating System.
+ .
+ You may find the installed items under /usr/doc/debian-zh-faq-t.

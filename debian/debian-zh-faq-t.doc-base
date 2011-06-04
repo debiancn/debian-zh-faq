@@ -1,0 +1,11 @@
+Document: debian-zh-faq-t
+Title: Debian Chinese FAQ (Chinese Big5)
+Author: Debian Chinese Project and Yu Guanghui
+Abstract: This document contains the traditional Chinese (Big5)
+ full text PostScript formats from the book "Debian Chinese FAQ" by
+ Debian Chinese Project and Yu Guanghui.
+Section: Debian
+
+
+Format: PostScript
+Files: /usr/share/doc/debian-zh-faq-t/debian-zh-faq-t.ps.gz

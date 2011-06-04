@@ -1,0 +1,77 @@
+# $Id: chinese[CN:gb:][TW:b5:].perl,v 1.1 2000/06/18 02:11:25 RRM Exp $
+#
+# chinese[CN:gb:][TW:b5:].perl for Chinese [CN:GB:][TW:Big5:], inspired heavily by english.perl
+# by Anthony Fok <foka@debian.org>
+# (english.perl by Ross Moore <ross@mpce.mq.edu.au>)
+
+
+package chinese[CN:gb:][TW:b5:];
+
+print " [chinese[CN:gb:][TW:b5:]]";
+
+sub main'chinese[CN:gb:][TW:b5:]_translation { @_[0] }
+
+
+package main;
+
+if (defined &addto_languages) { &addto_languages('chinese[CN:gb:][TW:b5:]') };
+
+sub chinese[CN:gb:][TW:b5:]_titles {
+    $toc_title = "目錄";
+    $lof_title = "圖目錄";
+    $lot_title = "表目錄";
+    $idx_title = "索引";
+    $ref_title = "參考";
+    $bib_title = "文獻";
+    $abs_title = "摘要";
+    $app_title = "附錄";
+    $pre_title = "序";
+    $foot_title = "腳注";
+    $thm_title = "定理";
+    $fig_name = "圖";
+    $tab_name = "表";
+    $prf_name = "Proof";
+    $date_name = "日期";
+    $page_name = "頁";
+  #  Sectioning-level titles
+    $part_name = "部";
+    $chapter_name = "章";
+    $section_name = "節";
+    $subsection_name = "小節";
+    $subsubsection_name = "次小節";
+    $paragraph_name = "段";
+  #  Misc. strings
+    $child_name = "Subsections";
+    $info_title = "關於本[CN:文檔:][TW:文件:]……";
+    $also_name = "see also";
+    $see_name = "see";
+  #  names in navigation panels
+    $next_name = "Next";
+    $up_name = "Up";
+    $prev_name = "Previous";
+  #  field names in email headers
+    $encl_name = "encl";
+    $headto_name = "To";
+    $cc_name = "cc";
+
+#    @CJKnumb = ('', '一', '二', '三', '四', '五',
+#	      '六', '七', '八', '九', '十', '十一', '十二');
+#    $GENERIC_WORDS = "and|the|of|for|by|a|an|to";
+}
+
+
+sub chinese[CN:gb:][TW:b5:]_today {
+    local($today) = &get_date();
+    $today =~ s|(\d+)/0?(\d+)/(\d+)|$3 年 $1 月 $2 日|;
+    join('',$today,$_[0]);
+}
+
+
+# use 'em
+&chinese[CN:gb:][TW:b5:]_titles;
+$default_language = 'chinese[CN:gb:][TW:b5:]';
+$TITLES_LANGUAGE = 'chinese[CN:gb:][TW:b5:]'; 
+$chinese[CN:gb:][TW:b5:]_encoding = '[CN:gb2312:][TW:big5:]';
+$CHARSET = $chinese[CN:gb:][TW:b5:]_encoding;
+
+1;

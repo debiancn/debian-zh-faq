@@ -1,0 +1,80 @@
+debian-zh-faq (1.11) unstable; urgency=low
+
+  * Changed font 'ming' to 'bsmi', 'song' to 'gbsn'. (Closes:Bug#393734)
+  * Replaced cjk-latex with latex-cjk-chinese in build-deps. 
+  * Added dvipdfmx to build-deps.
+
+ -- Yu Guanghui <ygh@debian.org>  Tue,  5 Dec 2006 14:57:51 +0800
+
+debian-zh-faq (1.10) unstable; urgency=low
+
+  * Fix lost changelog. Thanks Russ Allbery's patch 
+  	(closes:Bug#262434) 
+
+ -- Yu Guanghui <ygh@debian.org>  Sat,  7 Aug 2004 23:01:28 +0800
+
+debian-zh-faq (1.9) unstable; urgency=low
+
+  * Temporarily disable convert html file because latex2html
+    moved to non-free. (closes:Bug#221332)
+
+ -- Yu Guanghui <ygh@debian.org>  Sat, 31 Jan 2004 00:05:02 +0800
+
+debian-zh-faq (1.8) unstable; urgency=low
+
+  * Don't use hyperref. (closes:Bug#189561)
+  * Clean up.
+
+ -- Yu Guanghui <ygh@debian.org>  Thu,  8 May 2003 13:30:28 +0800
+
+debian-zh-faq (1.7) unstable; urgency=low
+
+  * Add English translation. 
+
+ -- Yu Guanghui <ygh@debian.org>  Thu, 15 Aug 2002 14:06:08 +0800
+
+debian-zh-faq (1.6) unstable; urgency=low
+
+  * Add Build-Depends: tetex-extra. (closes:Bug#133071)
+
+ -- Yu Guanghui <ygh@debian.org>  Sat,  9 Feb 2002 19:22:40 +0800
+
+debian-zh-faq (1.5) unstable; urgency=low
+
+  * New upstream release 
+
+ -- Yu Guanghui <ygh@debian.org>  Fri,  4 Jan 2002 20:48:40 +0800
+
+debian-zh-faq (1.4) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Yu Guanghui <ygh@debian.org>  Sat, 20 Oct 2001 10:40:08 +0800
+
+debian-zh-faq (1.3) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Yu Guanghui <ygh@debian.org>  Thu, 23 Aug 2001 19:52:32 +0800
+
+debian-zh-faq (1.2) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Yu Guanghui <ygh@debian.org>  Fri,  6 Jul 2001 01:06:49 +0800
+
+debian-zh-faq (1.1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Yu Guanghui <ygh@debian.org>  Mon, 26 Feb 2001 08:27:57 +0800
+
+debian-zh-faq (1.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Yu Guanghui <ygh@debian.org>  Tue, 20 Feb 2001 17:31:16 +0800
+
+Local variables:
+mode: debian-changelog
+End:

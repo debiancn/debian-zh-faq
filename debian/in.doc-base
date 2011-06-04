@@ -1,0 +1,11 @@
+Document: debian-zh-faq-[CN:s:][TW:t:]
+Title: Debian Chinese FAQ (Chinese [CN:GB:][TW:Big5:])
+Author: Debian Chinese Project and Yu Guanghui
+Abstract: This document contains the [CN:simplified:][TW:traditional:] Chinese ([CN:GB:][TW:Big5:])
+ full text PostScript formats from the book "Debian Chinese FAQ" by
+ Debian Chinese Project and Yu Guanghui.
+Section: Debian
+
+
+Format: PostScript
+Files: /usr/share/doc/debian-zh-faq-[CN:s:][TW:t:]/debian-zh-faq-[CN:s:][TW:t:].ps.gz

@@ -1,0 +1,73 @@
+#LaTeX2HTML Version 96.1 : dot.latex2html-init
+#
+### Command Line Argument Defaults #######################################
+
+#$HTML_VERSION = 4.0;
+
+#$MAX_SPLIT_DEPTH = 0;	# Stop making separate files at this depth
+
+#$DESTDIR = '';         # Put the result in this directory 
+
+# When this is set, the generated HTML files will be placed in the 
+# current directory. If set to 0 the default behaviour is to create (or reuse)
+# another file directory.
+#$NO_SUBDIR = 0;
+
+# Supply your own string if you don't like the default <Name> <Date>
+#$ADDRESS = "<I>$address_data[0] <BR>\n$address_data[1]</I>";
+
+#$NO_NAVIGATION = 1;	# 1 = do not put a navigation panel at the top of each page
+
+#$INFO = 0;              # 0 = do not make a "About this document..." section 
+
+# Reuse images generated during previous runs
+$REUSE = 2;
+
+### Other global variables ###############################################
+#$CHILDLINE = "<BR> <HR>\n";
+
+# Affects ONLY the way accents are processed 
+#$default_language = 'english';
+
+# The value of this variable determines how many words to use in each 
+# title that is added to the navigation panel (see below)
+# 
+#$WORDS_IN_NAVIGATION_PANEL_TITLES = 4;
+
+# This number will determine the size of 
+# image generating environments such as "figure", "table" or "minipage".
+# Effective values are those greater than 0.
+# Sensible values are between 0.1 - 4.
+#$FIGURE_SCALE_FACTOR = 1.6;
+
+#  If this is set then intermediate files are left for later inspection.
+#  This includes $$_images.tex and $$_images.log created during image
+#  conversion.
+#  Caution: Intermediate files can be *enormous*.
+#$DEBUG = 0;
+
+#  If both of the following two variables are set then the "Up" button
+#  of the navigation panel in the first node/page of a converted document
+#  will point to $EXTERNAL_UP_LINK. $EXTERNAL_UP_TITLE should be set
+#  to some text which describes this external link.
+#$EXTERNAL_UP_LINK = "";
+#$EXTERNAL_UP_TITLE = "";
+
+#$PAPERSIZE = "letter";
+
+# Replace "english" with another language in order to tell LaTeX2HTML that you 
+# want some generated section titles (eg "Table of Contents" or "References")
+# to appear in a different language. Currently only "english" and "french"
+# is supported but it is very easy to add your own. See the example in the
+# file "latex2html.config" 
+#$TITLES_LANGUAGE = "english";
+
+# $CHARSET = $TITLES_LANGUAGE.'encoding';
+$CHARSET = "big5";
+$default_language = "chineseb5";
+$TITLES_LANGUAGE = "chineseb5";
+
+&ignore_commands( <<_IGNORED_CMDS_);
+_IGNORED_CMDS_
+
+1;	# This must be the last line

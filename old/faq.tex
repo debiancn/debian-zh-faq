@@ -1,0 +1,351 @@
+% Debian Chinese FAQ
+% $Header$
+
+\documentclass[a4paper]{article}
+\usepackage{CJK}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{makeidx,xspace}
+
+
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+    \pdffalse
+\else
+    \pdfoutput=1
+    \pdftrue
+\fi
+
+\ifpdf
+   \usepackage[pdftex]{graphicx}
+   \pdfcompresslevel9
+\else
+   \usepackage{graphicx}
+   \usepackage[bookmarksopen,colorlinks]{hyperref}
+\fi
+
+%\hfuzz10pt
+%\emergencystretch10pt
+\oddsidemargin -2.5pc \evensidemargin -2.5pc
+\marginparwidth      4pc       % don't use marginal notes...
+\marginparsep      0.5pc       % ...in the UK TUG newsletter
+
+% VERTICAL SPACING:
+\topmargin  -0.5in             % allow half an inch border
+%\headheight 0\p@               % we don't bother with headers here ...
+%\headsep    0\p@               % ... this ain't a publication
+%\topskip    10\p@
+%\footskip   15\p@
+
+% DIMENSION OF TEXT:
+
+% vertical dimension
+\textheight        \paperheight
+\advance\textheight -1.5in
+%\textheight       250mm       % height of text on a page (A4 paper)
+
+% horizontal dimension: pro tem, as is for singlcolumn
+\textwidth         \paperwidth
+\advance\textwidth -1in
+%\textwidth        180mm       % total width of a page    (A4 paper)
+
+%\columnseprule     0.5\p@      % width of line in the inter-column gutter
+%\columnsep         10mm        % space between columns
+\tolerance         9999        % make those columns justify
+
+% FOOTNOTES:
+%\footnotesep 6\p@
+%\skip\footins 19.5\p@ plus 12\p@ \@minus \p@
+
+\makeindex
+
+\ifpdf
+\long\def\contributor#1#2#3{\index{#1=#1~\protect\url{mailto:#2}!Q\thesubsection}
+    {\noindent\small Contributed by: {#1}
+    \par\vspace{6pt}}\par\nobreak\noindent\ignorespaces}
+\else
+\long\def\contributor#1#2#3{\index{#1=#1~\protect\url{mailto:#2}!Q\thesubsection}
+    {\noindent\small Contributed by: \href{mailto:#2}{#1}
+    \par\vspace{6pt}}\par\nobreak\noindent\ignorespaces}
+\fi
+\renewcommand{\indexname}{Contributors}
+\renewenvironment{theindex}{\section{\indexname}
+ \begin{itemize}}{\end{itemize}}
+
+\long\def\Question#1{\subsection{\normalsize#1}}
+
+\begin{document}
+
+\begin{CJK*}{GB}{kai}
+\CJKtilde
+\title{Debian Chinese FAQ\\
+%      已经有~\protect\ref{lastquestion}~个问题被回答\\
+      版本 1.0-20001119}
+
+\author{于广辉\\ \url{mailto:ygh@debian.org}}
+\maketitle
+\end{CJK*}
+
+\begin{CJK*}{GB}{song}
+\CJKtilde
+\centerline{\textsc{Note}}
+\begin{quotation}
+这篇~Debian Chinese FAQ~给出了在~Debian~下使用中文时的一些常见问题和解决的方法。
+本~FAQ~的大部份内容都是整理自Debian中文计划的两个邮件列表%
+~\url{mailto:debian-chinese-gb@lists.debian.org}和%
+~\url{mailto:debian-chinese-big5@lists.debian.org}，感谢各位热心支持~Debian~中文
+计划的朋友。%
+\textbf{有关~Debian~的使用，可参考\emph{《Debian安装及使用导论》}中的说明。}
+
+您也可以把您使用~Debian~中文时遇到的问题和解决方法和我们分享，您可以填写下面
+的模板，然后寄给\url{mailto:ygh@debian.org}。
+\begin{verbatim}
+
+\Question{这是一个问题模板}
+   \contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+   \contributor{foo }{foo@foo.com}{2000/11/19}
+   请按照这种格式来提交。
+
+\end{verbatim}
+
+最新的FAQ可以在\url{http://www.debian.org/international/chinese/faq}下载。
+\end{quotation}
+
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+
+\begin{multicols}{2}
+\section{Debian~下的中文环境及软件}
+\Question{Debian~中文化简介}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+Debian~中文化采用的是规范的国际化~(i18n)~和本地化~(l10n)~的体系结构，使得应用程序本身
+能够正确处理中文，而不是采用外挂中文平台的方法。这使应用程序和中文的结合更加紧密。
+国际化的体系使~Debian~能够支持多种语系，只需要更改环境变量和本地化信息，就能在各个
+语系间切换。
+
+\Question{已经纳入~Debian~的中文软件}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+\begin{itemize}
+\item 主控台中文环境：
+\begin{itemize}
+\item CCE
+\item YH
+\item Chdrv
+\item Kon2
+\end{itemize}
+\item 字体：
+\begin{itemize}
+\item Arphic
+\item xfonts-intl,cjk
+\item unifont
+\end{itemize}
+\item X~终端：
+\begin{itemize}
+\item rxvt-ml
+\item cxterm
+\item jfbterm
+\end{itemize}
+\item 汉字输入平台：
+\begin{itemize}
+\item xcin
+\item xcingb,xa+cv
+\item chinput
+\end{itemize}
+\item 文字处理：
+\begin{itemize}
+\item CJK (cjk-latex)
+\end{itemize}
+\item 文档翻译：
+\begin{itemize}
+\item doc-linux-zh-s
+\item zh-trans
+\end{itemize}
+\item 编码转换：
+\begin{itemize}
+\item zh-autoconvert
+\end{itemize}
+\item 字典：
+\begin{itemize}
+\item cedict
+\item stardic
+\end{itemize}
+\end{itemize}
+
+
+\Question{已经支持~i18n~的~Debian~软件包}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+\begin{itemize}
+\item Gnome
+\item KDE2
+\item Mozilla
+\item Netscape
+\end{itemize}
+
+\section{中文环境设定}
+\Question{我现在要安装~Debian，我想使用中文，需要怎么做呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+和正常安装~Debian~一样没有什么特别，在安装过程中选择~\emph{task-chinese-s}%
+~(简体)~或~\emph{task-chinese-t}~(繁体)。有一点要注意，~\textbf{potato}~安装时，
+有可能出现有些包选了，但是没有安装上，这时需要你手工运行~\emph{dselect}，直接进
+入~\emph{Install}~菜单就可以了。
+
+\Question{我已经有了~\textbf{Debian}~系统，我怎样添加中文支持？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+确认你的~\emph{/etc/apt/source.list}~设置正确，运行命令%
+~\emph{apt-get install task-chinese-s}~(简体)~%
+或~\emph{apt-get install task-chinese-t}~(繁体)。
+
+\Question{如何为~libc6 2.2~生成~locale~文件？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+从~libc6 2.2~开始~locale~文件需要你自己来生成。编辑~\emph{/etc/locale.gen}，
+去掉你需要的~locale~的注释，然后以~\emph{root}~身份来运行~\emph{locale-gen}。
+
+\Question{我已经安装了中文支持，还需要作什么才能正常使用中文？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+确认你设定了以下参数~(\textbf{bash})~：\\
+\begin{quote}
+\emph{
+\textbf{\$(HOME)/.bashrc}\\
+export LC\_ALL=zh\_CN.GB2312\footnote{使用繁体字时，可以将~zh\_CN.GB2312~替换成
+zh\_TW.Big5，下同。}\\
+export LC\_CTYPE=zh\_CN.GB2312\\
+export LANG=zh\_CN.GB2312\\
+export XMODIFIERS=@im=Chinput\footnote{使用~Xcin~做输入服务器时可以用\emph{export
+XMODIFIERS=@im=xcin-zh\_CN.GB2312，下同。}}\\
+stty cs8 -istrip\\
+stty pass8\\
+\\
+\textbf{\$(HOME)/.inputrc}\\
+set meta-flag on\\
+set convert-meta off\\
+set output-meta on\\
+}
+\end{quote}
+\label{qnumofenv}
+
+\Question{炎黄中文平台下为什么总出现任何输入都没有反应的情况？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+炎黄中文平台目前只支持~\emph{vt100}~终端类型，所以在启动炎黄平台前先运行~%
+\emph{export TERM=vt100}，也可以把这条命令放到~\emph{\$(HOME)/.bashrc}~里。
+
+\Question{我怎么能让~XFree86 3.3.6~使用~TrueType~字体呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+确认已经安装并启动~\emph{xfs-xtt}~字体服务器，然后在~\emph{/etc/X11/XF86Config}~%
+的~\emph{Section ``Files''}~小结中加入~\emph{FontPath ``unix/localhost:7100''}。
+
+\Question{我怎么能让~XFree86 4.0~使用~TrueType~字体呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+XF4.0~使用~xtt~的~module~来支持~GB/Big5~的~TrueType~字体，已经不再需要~xfs-xtt~了。
+在~\emph{/etc/X11/XF86Config-4}~的~\emph{Section ``Files''}~小节中加入
+~\emph{FontPath ``/usr/lib/X11/fonts/TrueType''}，
+然后将~\emph{Load ``freetype''}~替换成~\emph{Load ``xtt''}~就可以了。
+可以将~\emph{FontPath ``unix/:7100''}~注释掉。
+
+
+\Question{我用~\emph{xfs-xtt}~缩放字体后，为什么~X~变的特别慢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+这是因为你启动~X~时没有加入~\emph{-deferglyphs 16}~的参数。这样话~\emph{xfs-xtt}~就
+会试图产生全部的字体。因此要用~\mbox{\emph{startx -\/- -deferglyphs 16}}~来启动~X。
+如果使用~xdm~的话，就要在~\emph{/etc/X11/xdm/Xserver}~里加入~\emph{-deferglyphs 16}。
+\label{qnumofxenv}
+
+\Question{怎样才能使用~XCIN~输入中文呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+XCIN~使用的是~\emph{XIM}~协议，只有支持~XIM~的程序才能接受~XCIN~输入。在运行应用程序前，
+要先运行~XCIN，并且设定~XMODIFIERS=``@im=xcin-zh\_CN.GB2312''。可以在~%
+\emph{\$(HOME)/.bashrc}~里加入~\emph{export XMODIFIERS=``im=xcin-zh\_CN.GB2312''}。
+然后就可以用~\emph{ctrl+space}~来激活输入法。
+
+\Question{怎样才能使用~Chinput~输入中文呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+Chinput~目前还没有正式纳入~Debian，因为~Chinput~要使用~UNICON~的输入法，
+而~UNICON~还需要做进一步的测试。你可以从：\\
+\url{http://master.debian.org/~ygh/unicon-im_3.0-1_i386.deb}\\
+\url{http://master.debian.org/~ygh/chinput_3.0.1-1_i386.deb}\\
+下载和安装~unicon-im~和~chinput。\\
+chinput~使用的也是~\emph{XIM}~协议，只有支持~XIM~的程序才能接受输入。在运行应用程序前，
+要先运行~chinput，并且设定~XMODIFIERS=``@im=Chinput''。可以在~%
+\emph{\$(HOME)/.bashrc}~里加入~\emph{export XMODIFIERS=``im=Chinput''}。
+然后就可以用~\emph{ctrl+space}~来激活输入法。需要注意的是默认设置的~chinput~包使用
+的是~TrueType~字体。
+
+\Question{cce, crxvt}
+
+
+\section{中文文字处理}
+\Question{CJK}
+
+\Question{怎样用~\emph{latex2html}~生成中文~html？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+\emph{latex2html}~已经具有~CJK~支持，我们要做的就是设定字符集。
+在~\emph{\$(HOME)/.latex2html-init}~里加入\emph{charset='gb2312';}。
+然后用命令~\emph{latex2html -iso CN foo}~来生成~html~文档。
+
+\section{应用程序设定}
+\Question{怎么能让~Netscape~显示中文呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+首先安装~\emph{netscape-zh-resource-475}。\\
+\emph{apt-get install netscape-zh-resource-475}\\
+然后需要进入~\emph{控制中心--观感--主题--风格}，将~\emph{apply fonts and colors to non-kde apps}~设为无效，或者修改~\emph{Netscape.ad}。
+
+\Question{\emph{xchat}~菜单已经显示中文了，为什么还不能在聊天室窗口输入显示中文？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+你必须先设定聊天室窗口的字体。将~\emph{设定--设定--聊天室窗口}中的~\emph{use
+gtk\_fontset\_load intead of gtk\_font\_load}~选中，然后确认字体中包含以下内容：\\
+\emph{-b\&h-lucidatypewriter-medium-r-normal-*-*-120-*-*-m-*-*-*，
+-default-*ng-medium-r-normal-*-*-140-*-*-c-*-*-*}。
+
+
+\Question{如何设置中文~KDE2~和~KOffice？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+首先要按照问题~\protect\ref{qnumofenv}\&\protect\ref{qnumofxenv}~设置好环境变量。
+然后设定\\
+\begin{quote}
+\emph{
+\textbf{\$(HOME)/.fontguess}\newline
+[zh\_CN.GB2312]\\
+helvetic song \\
+courier  kai \\
+times    song \\
+lucida   song \\
+}
+\end{quote}
+进入~KDE~，在\emph{控制中心--个性化--国家和语言}里，设定~\emph{cn,zh\_CN.GB2312,set-gbk}，然后重新启动~KDE~就可以了。\\
+如果使用~kdm，在~\$(HOME).xsession~作如下设定：
+\begin{quote}
+\emph{
+\textbf{\$(HOME)/.xsession}\newline
+export LANG=zh\_CN.GB2312\\
+export LC\_ALL=zh\_CN.GB2312\\
+export LC\_CTYPE=zh\_CN.GB2312\\
+export KDE\_LANG=zh\_CN.GB2312\\
+export XMODIFIERS=@im=Chinput\\
+chinput\\
+exec   kde2\\
+}
+\end{quote}
+
+\Question{为什么\textbf{星际译王}在~KDE2~下显示不了中文呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+KDE2~默认状态下，会用~KDE2~的字体和颜色设置去覆盖非~KDE~程序相应的设置。\\
+有两个解决办法：\\
+\begin{itemize}
+    \item 进入\emph{控制中心--观感--主题--风格}，将~\emph{apply fonts and colors to non-kde apps}~设为无效。
+    \item 用命令~\emph{/usr/bin/stardic -xrm '*fontList:9x15bold=English,
+    hz16=Chinese, yb10x20=YB'}~来运行~\emph{stardic}。
+\end{itemize}
+
+\Question{我的邮件有~\emph{GB,Big5,HZ}~编码的，我能不能给它们自动转换成一种编码呢？}
+\contributor{Yu Guanghui}{ygh@debian.org}{2000/11/19}
+你可以用~\emph{zh-autoconvert}~配合~\emph{procmail}~来完成这个功能。~\emph{zh-autoconvert}~是一个~\emph{GB,Big5,HZ}~自动识别转换的软件，
+它有一个例子程序---\emph{convmail.pl}，在~\emph{/usr/doc/zh-autoconvert/examples}~下，你可以把它复制到~\emph{\$HOME/bin}~下，然后建立一个~\emph{\$HOME/mimemail}~的目录。
+参考~\emph{/usr/doc/zh-autoconvert/examples/procmail.example}~建立自己的~\emph{\$HOME/.procmail}~文件。
+
+\Question{\emph{Emacs}}
+%\label{lastquestion}
+\end{multicols}
+\newpage
+\printindex
+\end{CJK*}
+\end{document}
