@@ -2,7 +2,9 @@ Source: debian-zh-faq
 Section: doc
 Build-Depends: debhelper (>= 7.1), latex-cjk-chinese, ghostscript, slice, zh-autoconvert, latex-cjk-chinese-arphic-bsmi00lp, latex-cjk-chinese-arphic-bkai00mp, latex-cjk-chinese-arphic-gbsn00lp, latex-cjk-chinese-arphic-gkai00mp, dvipdfmx
 Priority: optional
-Maintainer: Yu Guanghui <ygh@debian.org>
+Maintainer: Debian Chinese Team <chinese-developers@lists.alioth.debian.org>
+Uploaders:
+ LI Daobing <lidaobing@debian.org>
 Standards-Version: 3.8.4
 
 Package: debian-zh-faq-s
