@@ -1,15 +1,49 @@
+debian-zh-faq (1.11+nmu1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * debian/changelog
+    - Remove obsolete Emacs local variables.
+    - Move to packaging format "3.0 (native)".
+  * debian/chnagelog
+    - Delete EOL whitespaces.
+  * debian/compat
+    - New file.
+  * debian/control
+    - (Build-Depends): update obsolete gs to ghostscript.
+      (important; Closes: #575617).
+      Update to debhelper 7.1.
+    - (Description): Fix spelling.
+    - (Depends): Add ${misc:Depends}.
+    - (Homepage): Update to Freshmeat.
+    - (Maintainer): Set to QA Group.
+    - (Standards-Version): Update to 3.8.4.
+  * debian/copyright
+    - Update layout. Point to GPL-2.
+  * debian/in.doc-base
+    - (Files): Correct file locations (E: Lintian).
+  * debian/README.Debian.in
+    - Fix spelling.
+  * debian/rules
+    - (DH_COMPAT): Remove; obsolete.
+    - (install_subpkgs): Update dh_clean to dh_prep.
+    - (clean): Fix lintian debian-rules-ignores-make-clean-error.
+  * debian/source/format
+    - New file.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat, 08 May 2010 22:13:12 +0300
+
 debian-zh-faq (1.11) unstable; urgency=low
 
   * Changed font 'ming' to 'bsmi', 'song' to 'gbsn'. (Closes:Bug#393734)
-  * Replaced cjk-latex with latex-cjk-chinese in build-deps. 
+  * Replaced cjk-latex with latex-cjk-chinese in build-deps.
   * Added dvipdfmx to build-deps.
 
  -- Yu Guanghui <ygh@debian.org>  Tue,  5 Dec 2006 14:57:51 +0800
 
 debian-zh-faq (1.10) unstable; urgency=low
 
-  * Fix lost changelog. Thanks Russ Allbery's patch 
-  	(closes:Bug#262434) 
+  * Fix lost changelog. Thanks Russ Allbery's patch
+        (closes:Bug#262434)
 
  -- Yu Guanghui <ygh@debian.org>  Sat,  7 Aug 2004 23:01:28 +0800
 
@@ -29,7 +63,7 @@ debian-zh-faq (1.8) unstable; urgency=low
 
 debian-zh-faq (1.7) unstable; urgency=low
 
-  * Add English translation. 
+  * Add English translation.
 
  -- Yu Guanghui <ygh@debian.org>  Thu, 15 Aug 2002 14:06:08 +0800
 
@@ -41,31 +75,31 @@ debian-zh-faq (1.6) unstable; urgency=low
 
 debian-zh-faq (1.5) unstable; urgency=low
 
-  * New upstream release 
+  * New upstream release
 
  -- Yu Guanghui <ygh@debian.org>  Fri,  4 Jan 2002 20:48:40 +0800
 
 debian-zh-faq (1.4) unstable; urgency=low
 
-  * New upstream release. 
+  * New upstream release.
 
  -- Yu Guanghui <ygh@debian.org>  Sat, 20 Oct 2001 10:40:08 +0800
 
 debian-zh-faq (1.3) unstable; urgency=low
 
-  * New upstream release. 
+  * New upstream release.
 
  -- Yu Guanghui <ygh@debian.org>  Thu, 23 Aug 2001 19:52:32 +0800
 
 debian-zh-faq (1.2) unstable; urgency=low
 
-  * New upstream release. 
+  * New upstream release.
 
  -- Yu Guanghui <ygh@debian.org>  Fri,  6 Jul 2001 01:06:49 +0800
 
 debian-zh-faq (1.1) unstable; urgency=low
 
-  * New upstream release. 
+  * New upstream release.
 
  -- Yu Guanghui <ygh@debian.org>  Mon, 26 Feb 2001 08:27:57 +0800
 
@@ -74,7 +108,3 @@ debian-zh-faq (1.0) unstable; urgency=low
   * Initial Release.
 
  -- Yu Guanghui <ygh@debian.org>  Tue, 20 Feb 2001 17:31:16 +0800
-
-Local variables:
-mode: debian-changelog
-End:

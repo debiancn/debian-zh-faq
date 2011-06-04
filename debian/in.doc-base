@@ -8,4 +8,4 @@ Section: Debian
 
 
 Format: PostScript
-Files: /usr/share/doc/debian-zh-faq-[CN:s:][TW:t:]/debian-zh-faq-[CN:s:][TW:t:].ps.gz
+Files: /usr/share/doc/debian-zh-faq-[CN:s:][TW:t:]/debian-zh-faq.[CN:zh_CN:][TW:zh_TW:].ps.gz

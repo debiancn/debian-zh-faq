@@ -17,9 +17,6 @@ bin-package = $(package)-$(subpkg)
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-# This is the debhelper compatibility version to use.
-export DH_COMPAT=1
-
 build: build-stamp
 build-stamp:
 	dh_testdir
@@ -35,7 +32,7 @@ clean: $(clean_subpkgs)
 	rm -f build-stamp
 
 	# Add here commands to clean up after the build process.
-	-$(MAKE) distclean
+	[ ! -f Makefile ] || $(MAKE) distclean
 
 	cd debian \
 	&& for i in copyright README.Debian; do \
@@ -62,7 +59,7 @@ $(install_subpkgs): DH_OPTIONS = -p$(bin-package) -P$(d)
 $(install_subpkgs): build
 	dh_testdir $(DH_OPTIONS)
 	dh_testroot $(DH_OPTIONS)
-	dh_clean -k $(DH_OPTIONS)
+	dh_prep
 	dh_installdirs $(DH_OPTIONS)
 
 # Build architecture-independent files here.

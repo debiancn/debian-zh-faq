@@ -8,4 +8,4 @@ Section: Debian
 
 
 Format: PostScript
-Files: /usr/share/doc/debian-zh-faq-s/debian-zh-faq-s.ps.gz
+Files: /usr/share/doc/debian-zh-faq-s/debian-zh-faq.zh_CN.ps.gz

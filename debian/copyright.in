@@ -1,12 +1,17 @@
-This package was debianized by Yu Guanghui <ygh@debian.org> on
-Tue, 20 Feb 2001 17:31:16 +0800.
+This package was debianized by:
 
-Upstream Author: Yu Guanghui <ygh@debian.org>
+    Yu Guanghui <ygh@debian.org>
+    on Tue, 20 Feb 2001 17:31:16 +0800.
+
+Upstream Author:
+
+    Copyright (C) 2001-2006 Yu Guanghui <ygh@debian.org>
 
 Copyright:
-This book maybe copied under the terms of the GNU General Public Licence
-(see below).
+
+    This book maybe copied under the terms of the GNU General Public
+    Licence version 2, or any later version.
 
 On Debian systems, you can find the complete GNU GPL at
-/usr/share/common-licenses/GPL.
+"/usr/share/common-licenses/GPL-2".
 
