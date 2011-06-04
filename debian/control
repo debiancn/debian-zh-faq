@@ -18,7 +18,7 @@ Description: Debian Chinese FAQ (Chinese GB)
  environment setup. It also introduce the special Chinese software
  in Debian. Hope it can help you to use the Debian Operating System.
  .
- You can find the documentation in directory /usr/doc/debian-zh-faq-s.
+ You can find the documentation in directory /usr/share/doc/debian-zh-faq-s.
 
 Package: debian-zh-faq-t
 Depends: ${misc:Depends}
@@ -29,4 +29,4 @@ Description: Debian Chinese FAQ (Chinese Big5)
  environment setup. It also introduces the special Chinese software
  in Debian. Hope it can help you to use the Debian Operating System.
  .
- You can find the documentation in directory /usr/doc/debian-zh-faq-t.
+ You can find the documentation in directory /usr/share/doc/debian-zh-faq-t.
