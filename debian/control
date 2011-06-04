@@ -6,6 +6,8 @@ Maintainer: Debian Chinese Team <chinese-developers@lists.alioth.debian.org>
 Uploaders:
  LI Daobing <lidaobing@debian.org>
 Standards-Version: 3.9.2
+Vcs-Git: git://anonscm.debian.org/chinese/debian-zh-faq.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=chinese/debian-zh-faq.git
 
 Package: debian-zh-faq-s
 Depends: ${misc:Depends}

@@ -3,8 +3,9 @@ debian-zh-faq (1.12) unstable; urgency=low
   * New maintainer. (Closes: #629011)
   * debian/control:
     - bump standards version to 3.9.2.
+    - add Vcs-* fields.
 
- -- LI Daobing <lidaobing@debian.org>  Sat, 04 Jun 2011 17:34:17 +0800
+ -- LI Daobing <lidaobing@debian.org>  Sat, 04 Jun 2011 17:35:52 +0800
 
 debian-zh-faq (1.11+nmu1) unstable; urgency=low
 
