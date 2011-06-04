@@ -5,7 +5,7 @@ Priority: optional
 Maintainer: Debian Chinese Team <chinese-developers@lists.alioth.debian.org>
 Uploaders:
  LI Daobing <lidaobing@debian.org>
-Standards-Version: 3.8.4
+Standards-Version: 3.9.2
 
 Package: debian-zh-faq-s
 Depends: ${misc:Depends}
