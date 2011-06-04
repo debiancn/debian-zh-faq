@@ -45,6 +45,7 @@ clean: $(clean_subpkgs)
 	&&	slice	-o UNDEFuCN:debian-zh-faq-s.doc-base \
 			-o UNDEFuTW:debian-zh-faq-t.doc-base \
 			in.doc-base
+	rm -f debian/debian-zh-faq-s.README.Debian debian/debian-zh-faq-t.README.Debian
 
 $(clean_subpkgs): subpkg = $(patsubst clean_%,%,$@) 
 $(clean_subpkgs): DH_OPTIONS = -p$(bin-package) -P$(d)

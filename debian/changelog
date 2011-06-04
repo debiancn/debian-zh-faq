@@ -6,8 +6,9 @@ debian-zh-faq (1.12) unstable; urgency=low
     - add Vcs-* fields.
     - update description.
   * debian/README.Debian.in: change encoding to UTF-8.
+  * debian/rules: remove generated files.
 
- -- LI Daobing <lidaobing@debian.org>  Sat, 04 Jun 2011 17:41:09 +0800
+ -- LI Daobing <lidaobing@debian.org>  Sat, 04 Jun 2011 17:46:24 +0800
 
 debian-zh-faq (1.11+nmu1) unstable; urgency=low
 
