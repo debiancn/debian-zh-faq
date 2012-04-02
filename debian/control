@@ -1,12 +1,17 @@
 Source: debian-zh-faq
 Section: doc
-Build-Depends: debhelper (>= 7.1), latex-cjk-chinese, ghostscript, slice, zh-autoconvert, latex-cjk-chinese-arphic-bsmi00lp, latex-cjk-chinese-arphic-bkai00mp, latex-cjk-chinese-arphic-gbsn00lp, latex-cjk-chinese-arphic-gkai00mp, dvipdfmx
+Build-Depends: debhelper (>= 7.1), latex-cjk-chinese, ghostscript, slice, zh-autoconvert, 
+               latex-cjk-chinese-arphic-bsmi00lp, latex-cjk-chinese-arphic-bkai00mp, 
+               latex-cjk-chinese-arphic-gbsn00lp, latex-cjk-chinese-arphic-gkai00mp, 
+               texlive-latex-recommended, dvipdfmx
 Priority: optional
 Maintainer: Debian Chinese Team <chinese-developers@lists.alioth.debian.org>
 Uploaders:
- LI Daobing <lidaobing@debian.org>
-Standards-Version: 3.9.2
-Vcs-Git: git://anonscm.debian.org/chinese/debian-zh-faq.git
+ LI Daobing <lidaobing@debian.org>,
+ YunQiang Su <wzssyqa@gmail.com>
+DM-Upload-Allowed: yes
+Standards-Version: 3.9.3
+Vcs-Git: git://git.debian.org/git/chinese/debian-zh-faq.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=chinese/debian-zh-faq.git
 
 Package: debian-zh-faq-s
