@@ -1,21 +1,28 @@
 Source: debian-zh-faq
 Section: doc
-Build-Depends: debhelper (>= 7.1), latex-cjk-chinese, ghostscript, slice, zh-autoconvert, 
-               latex-cjk-chinese-arphic-bsmi00lp, latex-cjk-chinese-arphic-bkai00mp, 
-               latex-cjk-chinese-arphic-gbsn00lp, latex-cjk-chinese-arphic-gkai00mp, 
-               texlive-latex-recommended, dvipdfmx
+Build-Depends:
+ debhelper (>= 10),
+ dvipdfmx,
+ ghostscript,
+ latex-cjk-chinese,
+ latex-cjk-chinese-arphic-bkai00mp,
+ latex-cjk-chinese-arphic-bsmi00lp,
+ latex-cjk-chinese-arphic-gbsn00lp,
+ latex-cjk-chinese-arphic-gkai00mp,
+ slice,
+ texlive-latex-recommended,
+ zh-autoconvert,
 Priority: optional
 Maintainer: Debian Chinese Team <chinese-developers@lists.alioth.debian.org>
 Uploaders:
- LI Daobing <lidaobing@debian.org>,
- YunQiang Su <wzssyqa@gmail.com>
-DM-Upload-Allowed: yes
-Standards-Version: 3.9.3
-Vcs-Git: git://git.debian.org/git/chinese/debian-zh-faq.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=chinese/debian-zh-faq.git
+ YunQiang Su <wzssyqa@gmail.com>,
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/chinese/debian-zh-faq.git
+Vcs-Browser: https://anonscm.debian.org/git/chinese/debian-zh-faq.git
 
 Package: debian-zh-faq-s
-Depends: ${misc:Depends}
+Depends:
+ ${misc:Depends},
 Architecture: all
 Description: Debian Chinese FAQ (Chinese GB)
  This package contains the book Debian_Chinese_FAQ (Simplified Chinese
@@ -26,7 +33,8 @@ Description: Debian Chinese FAQ (Chinese GB)
  You can find the documentation in directory /usr/share/doc/debian-zh-faq-s.
 
 Package: debian-zh-faq-t
-Depends: ${misc:Depends}
+Depends:
+ ${misc:Depends},
 Architecture: all
 Description: Debian Chinese FAQ (Chinese Big5)
  This package contain the book Debian_Chinese_FAQ (Traditional Chinese

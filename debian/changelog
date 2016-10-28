@@ -1,3 +1,18 @@
+debian-zh-faq (1.14) unstable; urgency=medium
+
+  * Team upload.
+  * Add unreleased changelog.
+    - Really Closes: #165792. Bug is 15 years old and now useless.
+    - Re-add YunQiang Su to uploaders.
+  * Remove LI Daobing from uploaders list.
+    Thank you for all your contributions! (Closes: #841807)
+  * Bump Standard-Version to 3.9.8, no changes required.
+  * Update obsolete Vcs URLs.
+  * Remove obsolete DM-Upload-Allowed tag.
+  * Apply `wrap-and-sort -abst'.
+
+ -- Boyuan Yang <073plan@gmail.com>  Fri, 28 Oct 2016 14:44:39 +0800
+
 debian-zh-faq (1.13) unstable; urgency=low
 
   * Fix "FTBFS: ! LaTeX Error: File `url.sty' not found." (Closes: #666660)
