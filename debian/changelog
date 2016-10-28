@@ -1,4 +1,11 @@
-debian-zh-faq (1.12.1) unstable; urgency=low
+debian-zh-faq (1.13) unstable; urgency=low
+
+  * Fix "FTBFS: ! LaTeX Error: File `url.sty' not found." (Closes: #666660)
+    - add build-depends: texlive-latex-recommended
+
+ -- LI Daobing <lidaobing@debian.org>  Sun, 29 Apr 2012 12:33:23 +0800
+
+debian-zh-faq (1.12.1) UNRELEASED; urgency=low
 
   * Add texlive-latex-recommended to build-dep (Closes: #165792).
   * Add YunQiang Su to uploaders and add DMUA.
