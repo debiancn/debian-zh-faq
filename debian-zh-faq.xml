@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-  <book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en">
+<book
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="5.0" xml:lang="en">
     <title>Debian Chinese FAQ</title>
     <info>
         <subtitle>HOWTOs about using Chinese in Debian</subtitle>
@@ -19,6 +22,11 @@
                 <email>debian-chinese-gb@lists.debian.org</email>
                 and
                 <email>debian-chinese-big5@lists.debian.org</email>.
+        </para>
+        <para>
+                The document distributed with Debian package might be outdated.
+                You may view the latest version of Debian Chinese FAQ
+                <link xlink:href="https://chinese.alioth.debian.org/doc/debian-zh-faq/">online</link>.
         </para>
     </preface>
     <chapter>
@@ -41,15 +49,69 @@
         </para>
     </chapter>
     <chapter>
-        <title>Using Chinese Input Method in Debian</title>
+        <title>Setting up Chinese Environment</title>
+        <sect1>
+            <title>Installing packages</title>
+            <sect2>
+                <title>Using tasksel</title>
+            </sect2>
+            <sect2>
+                <title>Recommended Extra Packages</title>
+            </sect2>
+        </sect1>
+        <sect1>
+            <title>Configuring Environment</title>
+            <sect2>
+                <title>DE-specific configuration</title>
+            </sect2>
+        </sect1>
     </chapter>
     <chapter>
         <title>Chinese Documents in Debian</title>
+        <para>
+                Documents are provided by either software upstream or
+                Debian itself. Debian cannot control whether certain software
+                could provide with translated documents or not. However,
+                there are some efforts specific to Debian that try to
+                provide you with translated texts about software usage
+                and things around Debian.
+        </para>
+        <sect1>
+            <title>Debian Official Documents</title>
+        </sect1>
     </chapter>
     <chapter>
-        <title>Software support for Chinese in Debian</title>
+        <title>Application i18n/l10n support in Debian</title>
     </chapter>
     <appendix>
         <title>Localization resources and links</title>
+        <para>
+                This section contains some useful lists and hyperlinks
+                to various resources.
+        </para>
+        <sect1>
+            <title>List of packages under Debian Chinese Team</title>
+            <subtitle>package list as of December 2016</subtitle>
+            <tip>
+                <para>
+                        This list may be outdated. You can always find
+                        the latest information on <link xlink:href="https://qa.debian.org/developer.php?login=chinese-developers@lists.alioth.debian.org">Debian DDPO Website</link>.
+                </para>
+            </tip>
+        </sect1>
+        <sect1>
+            <title>Some useful packages outside of Team</title>
+                <itemizedlist mark="opencircle">
+                    <listitem>
+                        <para>opencc</para>
+                    </listitem>
+                    <listitem>
+                        <para>kde-l10n-zhcn</para>
+                    </listitem>
+                </itemizedlist>
+        </sect1>
+    </appendix>
+    <appendix>
+        <title>Chinese Working Team</title>
     </appendix>
     </book>

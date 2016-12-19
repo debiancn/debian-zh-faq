@@ -15,3 +15,4 @@
 3. Run `./update-po` to update PO file.
 4. Use any standard translation tool (lokalize, poedit, etc) to translate the text.
 5. Run `./generate-translate-xml` to generate translated DocBook.
+6. Run `make` to generate target HTML and PDF documents.

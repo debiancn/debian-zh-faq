@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-12-19 12:05+0800\n"
+"POT-Creation-Date: 2016-12-20 00:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,44 +17,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Attribute 'xml:lang' of: <book>
-#: debian-zh-faq.xml:2
+#: debian-zh-faq.xml:5
 msgid "en"
 msgstr ""
 
 #. type: Content of: <book><title>
-#: debian-zh-faq.xml:3
+#: debian-zh-faq.xml:6
 msgid "Debian Chinese FAQ"
 msgstr ""
 
 #. type: Content of: <book><info><subtitle>
-#: debian-zh-faq.xml:5
+#: debian-zh-faq.xml:8
 msgid "HOWTOs about using Chinese in Debian"
 msgstr ""
 
 #. type: Content of: <book><info>
-#: debian-zh-faq.xml:6
+#: debian-zh-faq.xml:9
 msgid "<author><orgname class=\"nonprofit\">Debian Chinese Team</orgname></author>"
 msgstr ""
 
 #. type: Content of: <book><dedication><para>
-#: debian-zh-faq.xml:9
+#: debian-zh-faq.xml:12
 msgid "For all Debian Chinese Users and Developers."
 msgstr ""
 
 #. type: Content of: <book><preface><title>
-#: debian-zh-faq.xml:12
+#: debian-zh-faq.xml:15
 msgid "Foreword"
 msgstr ""
 
 #. type: Content of: <book><preface><para>
-#: debian-zh-faq.xml:13
+#: debian-zh-faq.xml:16
 msgid ""
 "This Debian Chinese FAQ provides with suggestions and instructions about "
 "common problems and solutions when using Chinese under Debian."
 msgstr ""
 
 #. type: Content of: <book><preface><para>
-#: debian-zh-faq.xml:17
+#: debian-zh-faq.xml:20
 msgid ""
 "We welcome suggestions around improving this document.  Should you have any "
 "idea, please contact us via our maillist: "
@@ -62,27 +62,35 @@ msgid ""
 "<email>debian-chinese-big5@lists.debian.org</email>."
 msgstr ""
 
+#. type: Content of: <book><preface><para>
+#: debian-zh-faq.xml:27
+msgid ""
+"The document distributed with Debian package might be outdated.  You may "
+"view the latest version of Debian Chinese FAQ <link "
+"xlink:href=\"https://chinese.alioth.debian.org/doc/debian-zh-faq/\">online</link>."
+msgstr ""
+
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:25
+#: debian-zh-faq.xml:33
 msgid "Overview of Chinese support in Debian"
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
-#: debian-zh-faq.xml:26
+#: debian-zh-faq.xml:34
 msgid ""
 "Chinese and eastern Asian language support on desktop Linux has improved "
 "greatly since the beginning of the twenty-first century."
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
-#: debian-zh-faq.xml:31
+#: debian-zh-faq.xml:39
 msgid ""
 "Debian follows the multilanguage support and specifications as other Linus "
 "distributions do. Thing should work out-of-box.  under most circumstances."
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
-#: debian-zh-faq.xml:36
+#: debian-zh-faq.xml:44
 msgid ""
 "However, to fully utilize the works of localization in Debian, you are "
 "suggested to use tasksel to select proper packages.  Localization packages "
@@ -91,21 +99,105 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:44
-msgid "Using Chinese Input Method in Debian"
+#: debian-zh-faq.xml:52
+msgid "Setting up Chinese Environment"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><title>
+#: debian-zh-faq.xml:54
+msgid "Installing packages"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><title>
+#: debian-zh-faq.xml:56
+msgid "Using tasksel"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><title>
+#: debian-zh-faq.xml:59
+msgid "Recommended Extra Packages"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><title>
+#: debian-zh-faq.xml:63
+msgid "Configuring Environment"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><title>
+#: debian-zh-faq.xml:65
+msgid "DE-specific configuration"
 msgstr ""
 
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:47
+#: debian-zh-faq.xml:70
 msgid "Chinese Documents in Debian"
 msgstr ""
 
+#. type: Content of: <book><chapter><para>
+#: debian-zh-faq.xml:72
+msgid ""
+"Documents are provided by either software upstream or Debian itself. Debian "
+"cannot control whether certain software could provide with translated "
+"documents or not. However, there are some efforts specific to Debian that "
+"try to provide you with translated texts about software usage and things "
+"around Debian."
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><title>
+#: debian-zh-faq.xml:80
+msgid "Debian Official Documents"
+msgstr ""
+
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:50
-msgid "Software support for Chinese in Debian"
+#: debian-zh-faq.xml:84
+msgid "Application i18n/l10n support in Debian"
 msgstr ""
 
 #. type: Content of: <book><appendix><title>
-#: debian-zh-faq.xml:53
+#: debian-zh-faq.xml:87
 msgid "Localization resources and links"
+msgstr ""
+
+#. type: Content of: <book><appendix><para>
+#: debian-zh-faq.xml:89
+msgid "This section contains some useful lists and hyperlinks to various resources."
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><title>
+#: debian-zh-faq.xml:93
+msgid "List of packages under Debian Chinese Team"
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><subtitle>
+#: debian-zh-faq.xml:94
+msgid "package list as of December 2016"
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><tip><para>
+#: debian-zh-faq.xml:97
+msgid ""
+"This list may be outdated. You can always find the latest information on "
+"<link "
+"xlink:href=\"https://qa.debian.org/developer.php?login=chinese-developers@lists.alioth.debian.org\">Debian "
+"DDPO Website</link>."
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><title>
+#: debian-zh-faq.xml:103
+msgid "Some useful packages outside of Team"
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><itemizedlist><listitem><para>
+#: debian-zh-faq.xml:106
+msgid "opencc"
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><itemizedlist><listitem><para>
+#: debian-zh-faq.xml:109
+msgid "kde-l10n-zhcn"
+msgstr ""
+
+#. type: Content of: <book><appendix><title>
+#: debian-zh-faq.xml:115
+msgid "Chinese Working Team"
 msgstr ""
