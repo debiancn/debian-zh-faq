@@ -1,0 +1,3 @@
+#!/bin/sh
+
+po4a-updatepo -f docbook -m debian-zh-faq.xml -p debian-zh-faq.zh_CN.po

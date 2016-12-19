@@ -2,20 +2,19 @@ Source: debian-zh-faq
 Section: doc
 Build-Depends:
  debhelper (>= 10),
- dvipdfmx,
- ghostscript,
  latex-cjk-chinese,
- latex-cjk-chinese-arphic-bkai00mp,
- latex-cjk-chinese-arphic-bsmi00lp,
- latex-cjk-chinese-arphic-gbsn00lp,
- latex-cjk-chinese-arphic-gkai00mp,
+ xsltproc,
+ xmlto,
+ docbook-xsl-ns,
+ texlive-xetex,
  slice,
  texlive-latex-recommended,
- zh-autoconvert,
+ opencc (>= 1.0~),
 Priority: optional
 Maintainer: Debian Chinese Team <chinese-developers@lists.alioth.debian.org>
 Uploaders:
  YunQiang Su <wzssyqa@gmail.com>,
+ Boyuan yang <073plan@gmail.com>,
 Standards-Version: 3.9.8
 Vcs-Git: https://anonscm.debian.org/git/chinese/debian-zh-faq.git
 Vcs-Browser: https://anonscm.debian.org/git/chinese/debian-zh-faq.git
@@ -24,7 +23,7 @@ Package: debian-zh-faq-s
 Depends:
  ${misc:Depends},
 Architecture: all
-Description: Debian Chinese FAQ (Chinese GB)
+Description: Debian Chinese FAQ (Simplified Chinese)
  This package contains the book Debian_Chinese_FAQ (Simplified Chinese
  GB Version), and it answers some frequently asked question about Chinese
  environment setup. It also introduce the special Chinese software
@@ -36,7 +35,7 @@ Package: debian-zh-faq-t
 Depends:
  ${misc:Depends},
 Architecture: all
-Description: Debian Chinese FAQ (Chinese Big5)
+Description: Debian Chinese FAQ (Traditional Chinese)
  This package contain the book Debian_Chinese_FAQ (Traditional Chinese
  Big5 Version), and it answers some frequently asked question about Chinese
  environment setup. It also introduces the special Chinese software

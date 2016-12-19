@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en">
+    <title>Debian Chinese FAQ</title>
+    <info>
+        <subtitle>HOWTOs about using Chinese in Debian</subtitle>
+        <author><orgname class="nonprofit">Debian Chinese Team</orgname></author>
+    </info>
+    <dedication>
+        <para>For all Debian Chinese Users and Developers.</para>
+    </dedication>
+    <preface>
+        <title>Foreword</title>
+        <para>This Debian Chinese FAQ provides with suggestions and instructions
+              about common problems and solutions when using Chinese
+              under Debian.
+        </para>
+        <para>We welcome suggestions around improving this document.
+              Should you have any idea, please contact us via our maillist:
+                <email>debian-chinese-gb@lists.debian.org</email>
+                and
+                <email>debian-chinese-big5@lists.debian.org</email>.
+        </para>
+    </preface>
+    <chapter>
+        <title>Overview of Chinese support in Debian</title>
+        <para>Chinese and eastern Asian language support on desktop Linux
+                has improved greatly since the beginning of the twenty-first
+                century.
+        </para>
+        <para>
+                Debian follows the multilanguage support and specifications
+                as other Linus distributions do. Thing should work out-of-box.
+                under most circumstances.
+        </para>
+        <para>
+                However, to fully utilize the works of localization in Debian,
+                you are suggested to use tasksel to select proper packages.
+                Localization packages include input methods, translation packs,
+                fonts, dictionaries, etc.
+                Details will be explained below.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Using Chinese Input Method in Debian</title>
+    </chapter>
+    <chapter>
+        <title>Chinese Documents in Debian</title>
+    </chapter>
+    <chapter>
+        <title>Software support for Chinese in Debian</title>
+    </chapter>
+    <appendix>
+        <title>Localization resources and links</title>
+    </appendix>
+    </book>

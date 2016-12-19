@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-12-19 12:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Attribute 'xml:lang' of: <book>
+#: debian-zh-faq.xml:2
+msgid "en"
+msgstr ""
+
+#. type: Content of: <book><title>
+#: debian-zh-faq.xml:3
+msgid "Debian Chinese FAQ"
+msgstr ""
+
+#. type: Content of: <book><info><subtitle>
+#: debian-zh-faq.xml:5
+msgid "HOWTOs about using Chinese in Debian"
+msgstr ""
+
+#. type: Content of: <book><info>
+#: debian-zh-faq.xml:6
+msgid "<author><orgname class=\"nonprofit\">Debian Chinese Team</orgname></author>"
+msgstr ""
+
+#. type: Content of: <book><dedication><para>
+#: debian-zh-faq.xml:9
+msgid "For all Debian Chinese Users and Developers."
+msgstr ""
+
+#. type: Content of: <book><preface><title>
+#: debian-zh-faq.xml:12
+msgid "Foreword"
+msgstr ""
+
+#. type: Content of: <book><preface><para>
+#: debian-zh-faq.xml:13
+msgid ""
+"This Debian Chinese FAQ provides with suggestions and instructions about "
+"common problems and solutions when using Chinese under Debian."
+msgstr ""
+
+#. type: Content of: <book><preface><para>
+#: debian-zh-faq.xml:17
+msgid ""
+"We welcome suggestions around improving this document.  Should you have any "
+"idea, please contact us via our maillist: "
+"<email>debian-chinese-gb@lists.debian.org</email> and "
+"<email>debian-chinese-big5@lists.debian.org</email>."
+msgstr ""
+
+#. type: Content of: <book><chapter><title>
+#: debian-zh-faq.xml:25
+msgid "Overview of Chinese support in Debian"
+msgstr ""
+
+#. type: Content of: <book><chapter><para>
+#: debian-zh-faq.xml:26
+msgid ""
+"Chinese and eastern Asian language support on desktop Linux has improved "
+"greatly since the beginning of the twenty-first century."
+msgstr ""
+
+#. type: Content of: <book><chapter><para>
+#: debian-zh-faq.xml:31
+msgid ""
+"Debian follows the multilanguage support and specifications as other Linus "
+"distributions do. Thing should work out-of-box.  under most circumstances."
+msgstr ""
+
+#. type: Content of: <book><chapter><para>
+#: debian-zh-faq.xml:36
+msgid ""
+"However, to fully utilize the works of localization in Debian, you are "
+"suggested to use tasksel to select proper packages.  Localization packages "
+"include input methods, translation packs, fonts, dictionaries, etc.  Details "
+"will be explained below."
+msgstr ""
+
+#. type: Content of: <book><chapter><title>
+#: debian-zh-faq.xml:44
+msgid "Using Chinese Input Method in Debian"
+msgstr ""
+
+#. type: Content of: <book><chapter><title>
+#: debian-zh-faq.xml:47
+msgid "Chinese Documents in Debian"
+msgstr ""
+
+#. type: Content of: <book><chapter><title>
+#: debian-zh-faq.xml:50
+msgid "Software support for Chinese in Debian"
+msgstr ""
+
+#. type: Content of: <book><appendix><title>
+#: debian-zh-faq.xml:53
+msgid "Localization resources and links"
+msgstr ""

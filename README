@@ -1,0 +1,17 @@
+
+## Dependencies
+
+* docbook-xsl-ns
+* xsltproc
+* xmlto
+* xmlstarlet (validation)
+* dblatex
+* gettext
+
+## Workflow
+
+1. Write and update original DocBook (in English).
+2. Run `./update-pot` to update POT file. (optional)
+3. Run `./update-po` to update PO file.
+4. Use any standard translation tool (lokalize, poedit, etc) to translate the text.
+5. Run `./generate-translate-xml` to generate translated DocBook.

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+po4a-translate -f docbook -m debian-zh-faq.xml -p debian-zh-faq.zh_CN.po -l debian-zh-faq-s.xml
