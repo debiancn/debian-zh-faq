@@ -31,13 +31,13 @@
     </preface>
     <chapter>
         <title>Overview of Chinese support in Debian</title>
-        <para>Chinese and eastern Asian language support on desktop Linux
-                has improved greatly since the beginning of the twenty-first
-                century.
+        <para>
+                Chinese and eastern Asian language support on desktop Linux
+                has improved greatly since 2000.
         </para>
         <para>
                 Debian follows the multilanguage support and specifications
-                as other Linus distributions do. Thing should work out-of-box.
+                as other Linux distributions do. Things should work out-of-box
                 under most circumstances.
         </para>
         <para>
@@ -54,13 +54,78 @@
             <title>Installing packages</title>
             <sect2>
                 <title>Using tasksel</title>
+                <para>
+                        As a beginning, you may initialize your Debian system
+                        by selecting the proper tasksel package during the installation
+                        process or after you finish it.
+                </para>
+                <para>
+                        There are several tasks available for Chinese users, namely:
+                    <itemizedlist>
+                        <listitem>task-chinese-s</listitem>
+                        <listitem>task-chinese-s-desktop</listitem>
+                        <listitem>task-chinese-s-kde-desktop</listitem>
+                        <listitem>task-chinese-t</listitem>
+                        <listitem>task-chinese-t-desktop</listitem>
+                        <listitem>task-chinese-t-kde-desktop</listitem>
+                    </itemizedlist>
+                </para>
+                <para>
+                        After installation, you should already be able to read
+                        Chinese text from your Debian system. Typing Chinese might
+                        be a little more tricky, which will be explained in the
+                        following section.
+                </para>
             </sect2>
             <sect2>
                 <title>Recommended Extra Packages</title>
+                <para>
+                        Here we list packages that may be useful to Chinese users.
+                        You may freely select any of them to fit your needs.
+                </para>
+                <sect3>
+                    <title>Fonts</title>
+                </sect3>
+                <sect3>
+                    <title>Input Method</title>
+                </sect3>
+                <sect3>
+                    <title>Typesetting</title>
+                </sect3>
+                <sect3>
+                    <title>Documentation</title>
+                </sect3>
+                <sect3>
+                    <title>Encoding and Simplified/Traditional Chinese Transformation</title>
+                </sect3>
+                <sect3>
+                    <title>Console</title>
+                </sect3>
+                <sect3>
+                    <title>Dictionaries</title>
+                </sect3>
             </sect2>
         </sect1>
         <sect1>
             <title>Configuring Environment</title>
+            <sect2>
+                <title>Setting correct locale</title>
+                <para>
+                        By setting up correct locale for your system, you may utilize all
+                        translated strings of applications and enjoy a Chinese interface.
+                </para>
+                <para>
+                        We strongly encourage you to use the UTF-8 encoding. It is now the
+                        de-facto standard in the Linux world.
+                </para>
+                <para>
+                        The traditional way is to use <command>dpkg-reconfigure</command>
+                        with superuser privilege:
+                        <userinput>dpkg-reconfigure locales</userinput>
+                        The modern way with systemd should use <command>localectl</command>:
+                </para>
+
+            </sect2>
             <sect2>
                 <title>DE-specific configuration</title>
             </sect2>
@@ -98,6 +163,35 @@
                         the latest information on <link xlink:href="https://qa.debian.org/developer.php?login=chinese-developers@lists.alioth.debian.org">Debian DDPO Website</link>.
                 </para>
             </tip>
+            <sect2>
+              <title>Well-maintained packages</title>
+              <itemizedlist mark="opencircle">
+                <listitem>debian-zh-faq</listitem>
+                <listitem>fortune-zh</listitem>
+                <listitem>fqterm</listitem>
+                <listitem>iptux</listitem>
+                <listitem>liblunar</listitem>
+                <listitem>lunar-date</listitem>
+                <listitem>manpages-zh</listitem>
+                <listitem>zh-autoconvert</listitem>
+                <listitem>zhcon</listitem>
+              </itemizedlist>
+            </sect2>
+            <sect2>
+              <title>Fair-maintained packages in Debian 9</title>
+              <itemizedlist mark="opencircle">
+                <listitem>gmchess</listitem>
+                <listitem>lunar</listitem>
+                <listitem>txtreader</listitem>
+              </itemizedlist>
+            </sect2>
+            <sect2>
+              <title>Poor-maintained packages not in Debian 9</title>
+              <itemizedlist mark="opencircle">
+                <listitem>gemanx-gtk2</listitem>
+                <listitem>libofetion</listitem>
+              </itemizedlist>
+            </sect2>
         </sect1>
         <sect1>
             <title>Some useful packages outside of Team</title>

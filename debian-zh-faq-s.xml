@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<book
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="5.0" xml:lang="zh-cn">
+    <title>Debian中文常见问题解答</title>
+    <info>
+        <subtitle>有关Debian中文环境使用的常见问题解答</subtitle>
+<author><orgname class="nonprofit">Debian中文开发者团队</orgname></author></info>
+    <dedication>
+        <para>献给所有Debian中文用户与开发者。</para>
+    </dedication>
+    <preface>
+        <title>前言</title>
+        <para>本篇文章，即Debian中文常见问题解答，提供了针对在中文环境下使用Debian可能遇见的常见问题的解决方案，以及通用的建议和指导。
+        </para>
+        <para>我们欢迎您对本文档提出改进建议。如果您有任何意见与建议，请使用我们的邮件列表：<email>debian-chinese-gb@lists.debian.org</email>和<email>debian-chinese-big5@lists.debian.org</email>与我们取得联系。
+        </para>
+        <para>
+                The document distributed with Debian package might be outdated.  You may
+view the latest version of Debian Chinese FAQ <link
+xlink:href="https://chinese.alioth.debian.org/doc/debian-zh-faq/">online</link>.
+        </para>
+    </preface>
+    <chapter>
+        <title>Debian中文支持概览</title>
+        <para>
+                Linux桌面环境的中文和东亚语言支持自2000年以来已经得到了极大改善。
+        </para>
+        <para>
+                Debian follows the multilanguage support and specifications as other Linux
+distributions do. Things should work out-of-box under most circumstances.
+        </para>
+        <para>
+                However, to fully utilize the works of localization in Debian, you are
+suggested to use tasksel to select proper packages.  Localization packages
+include input methods, translation packs, fonts, dictionaries, etc.  Details
+will be explained below.
+        </para>
+    </chapter>
+    <chapter>
+        <title>配置中文环境</title>
+        <sect1>
+            <title>安装软件包</title>
+            <sect2>
+                <title>使用tasksel</title>
+                <para>
+                        As a beginning, you may initialize your Debian system by selecting the
+proper tasksel package during the installation process or after you finish
+it.
+                </para>
+                <para>
+                        There are several tasks available for Chinese users, namely:
+                    <itemizedlist>
+                        <listitem>task-chinese-s</listitem>
+                        <listitem>task-chinese-s-desktop</listitem>
+                        <listitem>task-chinese-s-kde-desktop</listitem>
+                        <listitem>task-chinese-t</listitem>
+                        <listitem>task-chinese-t-desktop</listitem>
+                        <listitem>task-chinese-t-kde-desktop</listitem>
+                    </itemizedlist>
+                </para>
+                <para>
+                        安装完成后，您应该能够使用您的Debian系统直接阅读中文文本了。输入中文可能会遇到些许困难，我们会在下面的章节中进行解释。
+                </para>
+            </sect2>
+            <sect2>
+                <title>推荐安装的额外软件包</title>
+                <para>
+                        我们在这里列出一些可能对中文用户有用的软件包。您可以从其中自由选择您所需要的软件。
+                </para>
+                <sect3>
+                    <title>字体</title>
+                </sect3>
+                <sect3>
+                    <title>输入法</title>
+                </sect3>
+                <sect3>
+                    <title>文字排版</title>
+                </sect3>
+                <sect3>
+                    <title>文档</title>
+                </sect3>
+                <sect3>
+                    <title>编码和繁简转换</title>
+                </sect3>
+                <sect3>
+                    <title>控制台</title>
+                </sect3>
+                <sect3>
+                    <title>词典</title>
+                </sect3>
+            </sect2>
+        </sect1>
+        <sect1>
+            <title>配置环境</title>
+            <sect2>
+                <title>设置正确的locale</title>
+                <para>
+                        By setting up correct locale for your system, you may utilize all translated
+strings of applications and enjoy a Chinese interface.
+                </para>
+                <para>
+                        我们强烈建议您使用UTF-8编码。它已经是Linux世界事实上的标准编码。
+                </para>
+                <para>
+                        传统的方式是使用<command>dpkg-reconfigure</command>以超级用户权限运行：<userinput>dpkg-reconfigure
+locales</userinput>。更现代的与systemd相结合的方式是使用<command>localectl</command>：
+                </para>
+
+            </sect2>
+            <sect2>
+                <title>桌面环境专有的配置</title>
+            </sect2>
+        </sect1>
+    </chapter>
+    <chapter>
+        <title>Debian中的中文文档</title>
+        <para>
+                Documents are provided by either software upstream or Debian itself. Debian
+cannot control whether certain software could provide with translated
+documents or not. However, there are some efforts specific to Debian that
+try to provide you with translated texts about software usage and things
+around Debian.
+        </para>
+        <sect1>
+            <title>Debian官方文档</title>
+        </sect1>
+    </chapter>
+    <chapter>
+        <title>Debian中应用程序的国际化、本地化支持情况</title>
+    </chapter>
+    <appendix>
+        <title>本地化资源和链接</title>
+        <para>
+                This section contains some useful lists and hyperlinks to various resources.
+        </para>
+        <sect1>
+            <title>由Debian中文开发者团队所维护的软件包列表</title>
+            <subtitle>2016年12月的软件包列表</subtitle>
+            <tip>
+                <para>
+                        本列表可能已经过时。您总能在<link
+xlink:href="https://qa.debian.org/developer.php?login=chinese-developers@lists.alioth.debian.org">Debian
+DDPO 网站</link>上找到最新的信息。
+                </para>
+            </tip>
+            <sect2>
+              <title>维护良好的软件包</title>
+              <itemizedlist mark="opencircle">
+                <listitem>debian-zh-faq</listitem>
+                <listitem>fortune-zh</listitem>
+                <listitem>fqterm</listitem>
+                <listitem>iptux</listitem>
+                <listitem>liblunar</listitem>
+                <listitem>lunar-date</listitem>
+                <listitem>manpages-zh</listitem>
+                <listitem>zh-autoconvert</listitem>
+                <listitem>zhcon</listitem>
+              </itemizedlist>
+            </sect2>
+            <sect2>
+              <title>维护尚可且进入Debian 9的软件包</title>
+              <itemizedlist mark="opencircle">
+                <listitem>gmchess</listitem>
+                <listitem>lunar</listitem>
+                <listitem>txtreader</listitem>
+              </itemizedlist>
+            </sect2>
+            <sect2>
+              <title>维护不佳且未进入Debian 9的软件包</title>
+              <itemizedlist mark="opencircle">
+                <listitem>gemanx-gtk2</listitem>
+                <listitem>libofetion</listitem>
+              </itemizedlist>
+            </sect2>
+        </sect1>
+        <sect1>
+            <title>团队外的一些有价值的软件包</title>
+                <itemizedlist mark="opencircle">
+                    <listitem>
+                        <para>opencc</para>
+                    </listitem>
+                    <listitem>
+                        <para>kde-l10n-zhcn</para>
+                    </listitem>
+                </itemizedlist>
+        </sect1>
+    </appendix>
+    <appendix>
+        <title>中文工作团队</title>
+    </appendix>
+    </book>

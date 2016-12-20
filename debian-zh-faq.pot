@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-12-20 00:31+0800\n"
+"POT-Creation-Date: 2016-12-20 20:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,17 +76,17 @@ msgid "Overview of Chinese support in Debian"
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
-#: debian-zh-faq.xml:34
+#: debian-zh-faq.xml:35
 msgid ""
 "Chinese and eastern Asian language support on desktop Linux has improved "
-"greatly since the beginning of the twenty-first century."
+"greatly since 2000."
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
 #: debian-zh-faq.xml:39
 msgid ""
-"Debian follows the multilanguage support and specifications as other Linus "
-"distributions do. Thing should work out-of-box.  under most circumstances."
+"Debian follows the multilanguage support and specifications as other Linux "
+"distributions do. Things should work out-of-box under most circumstances."
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
@@ -113,28 +113,118 @@ msgstr ""
 msgid "Using tasksel"
 msgstr ""
 
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:58
+msgid ""
+"As a beginning, you may initialize your Debian system by selecting the "
+"proper tasksel package during the installation process or after you finish "
+"it."
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:63
+msgid "There are several tasks available for Chinese users, namely:"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:74
+msgid ""
+"After installation, you should already be able to read Chinese text from "
+"your Debian system. Typing Chinese might be a little more tricky, which will "
+"be explained in the following section."
+msgstr ""
+
 #. type: Content of: <book><chapter><sect1><sect2><title>
-#: debian-zh-faq.xml:59
+#: debian-zh-faq.xml:81
 msgid "Recommended Extra Packages"
 msgstr ""
 
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:83
+msgid ""
+"Here we list packages that may be useful to Chinese users.  You may freely "
+"select any of them to fit your needs."
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:87
+msgid "Fonts"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:90
+msgid "Input Method"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:93
+msgid "Typesetting"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:96
+msgid "Documentation"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:99
+msgid "Encoding and Simplified/Traditional Chinese Transformation"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:102
+msgid "Console"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:105
+msgid "Dictionaries"
+msgstr ""
+
 #. type: Content of: <book><chapter><sect1><title>
-#: debian-zh-faq.xml:63
+#: debian-zh-faq.xml:110
 msgid "Configuring Environment"
 msgstr ""
 
 #. type: Content of: <book><chapter><sect1><sect2><title>
-#: debian-zh-faq.xml:65
+#: debian-zh-faq.xml:112
+msgid "Setting correct locale"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:114
+msgid ""
+"By setting up correct locale for your system, you may utilize all translated "
+"strings of applications and enjoy a Chinese interface."
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:118
+msgid ""
+"We strongly encourage you to use the UTF-8 encoding. It is now the de-facto "
+"standard in the Linux world."
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:122
+msgid ""
+"The traditional way is to use <command>dpkg-reconfigure</command> with "
+"superuser privilege: <userinput>dpkg-reconfigure locales</userinput> The "
+"modern way with systemd should use <command>localectl</command>:"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><title>
+#: debian-zh-faq.xml:130
 msgid "DE-specific configuration"
 msgstr ""
 
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:70
+#: debian-zh-faq.xml:135
 msgid "Chinese Documents in Debian"
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
-#: debian-zh-faq.xml:72
+#: debian-zh-faq.xml:137
 msgid ""
 "Documents are provided by either software upstream or Debian itself. Debian "
 "cannot control whether certain software could provide with translated "
@@ -144,37 +234,37 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <book><chapter><sect1><title>
-#: debian-zh-faq.xml:80
+#: debian-zh-faq.xml:145
 msgid "Debian Official Documents"
 msgstr ""
 
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:84
+#: debian-zh-faq.xml:149
 msgid "Application i18n/l10n support in Debian"
 msgstr ""
 
 #. type: Content of: <book><appendix><title>
-#: debian-zh-faq.xml:87
+#: debian-zh-faq.xml:152
 msgid "Localization resources and links"
 msgstr ""
 
 #. type: Content of: <book><appendix><para>
-#: debian-zh-faq.xml:89
+#: debian-zh-faq.xml:154
 msgid "This section contains some useful lists and hyperlinks to various resources."
 msgstr ""
 
 #. type: Content of: <book><appendix><sect1><title>
-#: debian-zh-faq.xml:93
+#: debian-zh-faq.xml:158
 msgid "List of packages under Debian Chinese Team"
 msgstr ""
 
 #. type: Content of: <book><appendix><sect1><subtitle>
-#: debian-zh-faq.xml:94
+#: debian-zh-faq.xml:159
 msgid "package list as of December 2016"
 msgstr ""
 
 #. type: Content of: <book><appendix><sect1><tip><para>
-#: debian-zh-faq.xml:97
+#: debian-zh-faq.xml:162
 msgid ""
 "This list may be outdated. You can always find the latest information on "
 "<link "
@@ -182,22 +272,37 @@ msgid ""
 "DDPO Website</link>."
 msgstr ""
 
+#. type: Content of: <book><appendix><sect1><sect2><title>
+#: debian-zh-faq.xml:167
+msgid "Well-maintained packages"
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><sect2><title>
+#: debian-zh-faq.xml:181
+msgid "Fair-maintained packages in Debian 9"
+msgstr ""
+
+#. type: Content of: <book><appendix><sect1><sect2><title>
+#: debian-zh-faq.xml:189
+msgid "Poor-maintained packages not in Debian 9"
+msgstr ""
+
 #. type: Content of: <book><appendix><sect1><title>
-#: debian-zh-faq.xml:103
+#: debian-zh-faq.xml:197
 msgid "Some useful packages outside of Team"
 msgstr ""
 
 #. type: Content of: <book><appendix><sect1><itemizedlist><listitem><para>
-#: debian-zh-faq.xml:106
+#: debian-zh-faq.xml:200
 msgid "opencc"
 msgstr ""
 
 #. type: Content of: <book><appendix><sect1><itemizedlist><listitem><para>
-#: debian-zh-faq.xml:109
+#: debian-zh-faq.xml:203
 msgid "kde-l10n-zhcn"
 msgstr ""
 
 #. type: Content of: <book><appendix><title>
-#: debian-zh-faq.xml:115
+#: debian-zh-faq.xml:209
 msgid "Chinese Working Team"
 msgstr ""

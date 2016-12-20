@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-zh-faq 2.0\n"
-"POT-Creation-Date: 2016-12-20 00:32+0800\n"
-"PO-Revision-Date: 2016-12-20 00:36+0800\n"
+"POT-Creation-Date: 2016-12-20 20:32+0800\n"
+"PO-Revision-Date: 2016-12-20 20:44+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese <kde-china@kde.org>\n"
 "Language: zh_CN\n"
@@ -20,28 +20,28 @@ msgstr ""
 #. type: Attribute 'xml:lang' of: <book>
 #: debian-zh-faq.xml:5
 msgid "en"
-msgstr "zh-Hans"
+msgstr "zh-cn"
 
 #. type: Content of: <book><title>
 #: debian-zh-faq.xml:6
 msgid "Debian Chinese FAQ"
-msgstr "Debian中文常见问题"
+msgstr "Debian中文常见问题解答"
 
 #. type: Content of: <book><info><subtitle>
 #: debian-zh-faq.xml:8
 msgid "HOWTOs about using Chinese in Debian"
-msgstr ""
+msgstr "有关Debian中文环境使用的常见问题解答"
 
 #. type: Content of: <book><info>
 #: debian-zh-faq.xml:9
 msgid ""
 "<author><orgname class=\"nonprofit\">Debian Chinese Team</orgname></author>"
-msgstr ""
+msgstr "<author><orgname class=\"nonprofit\">Debian中文开发者团队</orgname></author>"
 
 #. type: Content of: <book><dedication><para>
 #: debian-zh-faq.xml:12
 msgid "For all Debian Chinese Users and Developers."
-msgstr ""
+msgstr "献给所有Debian中文用户与开发者。"
 
 #. type: Content of: <book><preface><title>
 #: debian-zh-faq.xml:15
@@ -53,7 +53,7 @@ msgstr "前言"
 msgid ""
 "This Debian Chinese FAQ provides with suggestions and instructions about "
 "common problems and solutions when using Chinese under Debian."
-msgstr ""
+msgstr "本篇文章，即Debian中文常见问题解答，提供了针对在中文环境下使用Debian可能遇见的常见问题的解决方案，以及通用的建议和指导。"
 
 #. type: Content of: <book><preface><para>
 #: debian-zh-faq.xml:20
@@ -62,6 +62,9 @@ msgid ""
 "idea, please contact us via our maillist: <email>debian-chinese-gb@lists."
 "debian.org</email> and <email>debian-chinese-big5@lists.debian.org</email>."
 msgstr ""
+"我们欢迎您对本文档提出改进建议。如果您有任何意见与建议，请使用我们的邮件列表：<email"
+">debian-chinese-gb@lists.debian.org</email>和<email"
+">debian-chinese-big5@lists.debian.org</email>与我们取得联系。"
 
 #. type: Content of: <book><preface><para>
 #: debian-zh-faq.xml:27
@@ -77,17 +80,17 @@ msgid "Overview of Chinese support in Debian"
 msgstr "Debian中文支持概览"
 
 #. type: Content of: <book><chapter><para>
-#: debian-zh-faq.xml:34
+#: debian-zh-faq.xml:35
 msgid ""
 "Chinese and eastern Asian language support on desktop Linux has improved "
-"greatly since the beginning of the twenty-first century."
-msgstr ""
+"greatly since 2000."
+msgstr "Linux桌面环境的中文和东亚语言支持自2000年以来已经得到了极大改善。"
 
 #. type: Content of: <book><chapter><para>
 #: debian-zh-faq.xml:39
 msgid ""
-"Debian follows the multilanguage support and specifications as other Linus "
-"distributions do. Thing should work out-of-box.  under most circumstances."
+"Debian follows the multilanguage support and specifications as other Linux "
+"distributions do. Things should work out-of-box under most circumstances."
 msgstr ""
 
 #. type: Content of: <book><chapter><para>
@@ -114,28 +117,121 @@ msgstr "安装软件包"
 msgid "Using tasksel"
 msgstr "使用tasksel"
 
-#. type: Content of: <book><chapter><sect1><sect2><title>
-#: debian-zh-faq.xml:59
-msgid "Recommended Extra Packages"
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:58
+msgid ""
+"As a beginning, you may initialize your Debian system by selecting the "
+"proper tasksel package during the installation process or after you finish "
+"it."
 msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:63
+msgid "There are several tasks available for Chinese users, namely:"
+msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:74
+msgid ""
+"After installation, you should already be able to read Chinese text from "
+"your Debian system. Typing Chinese might be a little more tricky, which will "
+"be explained in the following section."
+msgstr "安装完成后，您应该能够使用您的Debian系统直接阅读中文文本了。输入中文可能会遇到些许困难，我们会在下面的章节中进行解释。"
+
+#. type: Content of: <book><chapter><sect1><sect2><title>
+#: debian-zh-faq.xml:81
+msgid "Recommended Extra Packages"
+msgstr "推荐安装的额外软件包"
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:83
+msgid ""
+"Here we list packages that may be useful to Chinese users.  You may freely "
+"select any of them to fit your needs."
+msgstr "我们在这里列出一些可能对中文用户有用的软件包。您可以从其中自由选择您所需要的软件。"
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:87
+msgid "Fonts"
+msgstr "字体"
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:90
+msgid "Input Method"
+msgstr "输入法"
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:93
+msgid "Typesetting"
+msgstr "文字排版"
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:96
+msgid "Documentation"
+msgstr "文档"
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:99
+msgid "Encoding and Simplified/Traditional Chinese Transformation"
+msgstr "编码和繁简转换"
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:102
+msgid "Console"
+msgstr "控制台"
+
+#. type: Content of: <book><chapter><sect1><sect2><sect3><title>
+#: debian-zh-faq.xml:105
+msgid "Dictionaries"
+msgstr "词典"
 
 #. type: Content of: <book><chapter><sect1><title>
-#: debian-zh-faq.xml:63
+#: debian-zh-faq.xml:110
 msgid "Configuring Environment"
-msgstr ""
+msgstr "配置环境"
 
 #. type: Content of: <book><chapter><sect1><sect2><title>
-#: debian-zh-faq.xml:65
-msgid "DE-specific configuration"
+#: debian-zh-faq.xml:112
+msgid "Setting correct locale"
+msgstr "设置正确的locale"
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:114
+msgid ""
+"By setting up correct locale for your system, you may utilize all translated "
+"strings of applications and enjoy a Chinese interface."
 msgstr ""
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:118
+msgid ""
+"We strongly encourage you to use the UTF-8 encoding. It is now the de-facto "
+"standard in the Linux world."
+msgstr "我们强烈建议您使用UTF-8编码。它已经是Linux世界事实上的标准编码。"
+
+#. type: Content of: <book><chapter><sect1><sect2><para>
+#: debian-zh-faq.xml:122
+msgid ""
+"The traditional way is to use <command>dpkg-reconfigure</command> with "
+"superuser privilege: <userinput>dpkg-reconfigure locales</userinput> The "
+"modern way with systemd should use <command>localectl</command>:"
+msgstr ""
+"传统的方式是使用<command>dpkg-reconfigure</command>以超级用户权限运行：<userinput"
+">dpkg-reconfigure locales</userinput>。更现代的与systemd相结合的方式是使用<command"
+">localectl</command>："
+
+#. type: Content of: <book><chapter><sect1><sect2><title>
+#: debian-zh-faq.xml:130
+msgid "DE-specific configuration"
+msgstr "桌面环境专有的配置"
 
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:70
+#: debian-zh-faq.xml:135
 msgid "Chinese Documents in Debian"
-msgstr ""
+msgstr "Debian中的中文文档"
 
 #. type: Content of: <book><chapter><para>
-#: debian-zh-faq.xml:72
+#: debian-zh-faq.xml:137
 msgid ""
 "Documents are provided by either software upstream or Debian itself. Debian "
 "cannot control whether certain software could provide with translated "
@@ -145,61 +241,79 @@ msgid ""
 msgstr ""
 
 #. type: Content of: <book><chapter><sect1><title>
-#: debian-zh-faq.xml:80
+#: debian-zh-faq.xml:145
 msgid "Debian Official Documents"
 msgstr "Debian官方文档"
 
 #. type: Content of: <book><chapter><title>
-#: debian-zh-faq.xml:84
+#: debian-zh-faq.xml:149
 msgid "Application i18n/l10n support in Debian"
-msgstr ""
+msgstr "Debian中应用程序的国际化、本地化支持情况"
 
 #. type: Content of: <book><appendix><title>
-#: debian-zh-faq.xml:87
+#: debian-zh-faq.xml:152
 msgid "Localization resources and links"
 msgstr "本地化资源和链接"
 
 #. type: Content of: <book><appendix><para>
-#: debian-zh-faq.xml:89
+#: debian-zh-faq.xml:154
 msgid ""
 "This section contains some useful lists and hyperlinks to various resources."
 msgstr ""
 
 #. type: Content of: <book><appendix><sect1><title>
-#: debian-zh-faq.xml:93
+#: debian-zh-faq.xml:158
 msgid "List of packages under Debian Chinese Team"
-msgstr ""
+msgstr "由Debian中文开发者团队所维护的软件包列表"
 
 #. type: Content of: <book><appendix><sect1><subtitle>
-#: debian-zh-faq.xml:94
+#: debian-zh-faq.xml:159
 msgid "package list as of December 2016"
 msgstr "2016年12月的软件包列表"
 
 #. type: Content of: <book><appendix><sect1><tip><para>
-#: debian-zh-faq.xml:97
+#: debian-zh-faq.xml:162
 msgid ""
 "This list may be outdated. You can always find the latest information on "
 "<link xlink:href=\"https://qa.debian.org/developer.php?login=chinese-"
 "developers@lists.alioth.debian.org\">Debian DDPO Website</link>."
 msgstr ""
+"本列表可能已经过时。您总能在<link xlink:href=\"https://qa.debian.org/developer.php?login=chi"
+"nese-developers@lists.alioth.debian.org\">Debian DDPO 网站</link>上找到最新的信息。"
+
+#. type: Content of: <book><appendix><sect1><sect2><title>
+#: debian-zh-faq.xml:167
+#| msgid "Installing packages"
+msgid "Well-maintained packages"
+msgstr "维护良好的软件包"
+
+#. type: Content of: <book><appendix><sect1><sect2><title>
+#: debian-zh-faq.xml:181
+msgid "Fair-maintained packages in Debian 9"
+msgstr "维护尚可且进入Debian 9的软件包"
+
+#. type: Content of: <book><appendix><sect1><sect2><title>
+#: debian-zh-faq.xml:189
+msgid "Poor-maintained packages not in Debian 9"
+msgstr "维护不佳且未进入Debian 9的软件包"
 
 #. type: Content of: <book><appendix><sect1><title>
-#: debian-zh-faq.xml:103
+#: debian-zh-faq.xml:197
 msgid "Some useful packages outside of Team"
 msgstr "团队外的一些有价值的软件包"
 
 #. type: Content of: <book><appendix><sect1><itemizedlist><listitem><para>
-#: debian-zh-faq.xml:106
+#: debian-zh-faq.xml:200
 msgid "opencc"
 msgstr "opencc"
 
 #. type: Content of: <book><appendix><sect1><itemizedlist><listitem><para>
-#: debian-zh-faq.xml:109
+#: debian-zh-faq.xml:203
 msgid "kde-l10n-zhcn"
 msgstr "kde-l10n-zhcn"
 
 #. type: Content of: <book><appendix><title>
-#: debian-zh-faq.xml:115
+#: debian-zh-faq.xml:209
 msgid "Chinese Working Team"
 msgstr "中文工作团队"
 
