@@ -4,9 +4,56 @@
         xmlns:xlink="http://www.w3.org/1999/xlink"
         version="5.0" xml:lang="en">
     <title>Debian Chinese FAQ</title>
+    <revhistory>
+        <revision>
+            <revnumber>1.0</revnumber>
+            <date>2001-02-20</date>
+            <revremark>Initial Release.</revremark>
+        </revision>
+        <revision>
+            <revnumber>1.7</revnumber>
+            <date>2002-08-15</date>
+            <revremark>Add English translation.</revremark>
+        </revision>
+        <revision>
+            <revnumber>1.8</revnumber>
+            <date>2003-05-08</date>
+            <revremark>Clean up.</revremark>
+        </revision>
+        <revision>
+            <revnumber>1.13</revnumber>
+            <date>2012-04-29</date>
+            <revremark>Packaging fixes.</revremark>
+        </revision>
+        <revision>
+            <revnumber>1.90</revnumber>
+            <date>2016-12-20</date>
+            <revremark>Start of rewrite work.</revremark>
+            <revdescription>
+                <para>
+                        This is a complete rewrite of the original
+                        document.
+                </para>
+            </revdescription>
+        </revision>
+    </revhistory>
     <info>
         <subtitle>HOWTOs about using Chinese in Debian</subtitle>
-        <author><orgname class="nonprofit">Debian Chinese Team</orgname></author>
+        <authorgroup>
+            <author>
+                <personname>
+                    <firstname>Boyuan</firstname>
+                    <surname>Yang</surname>
+                </personname>
+                <email>073plan@gmail.com</email>
+                <uri>https://hosiet.me</uri>
+            </author>
+            <author>
+                <personname>Debian Chinese Team</personname>
+                <email>chinese-developers@lists.alioth.debian.org</email>
+                <uri>https://chinese.alioth.debian.org</uri>
+            </author>
+        </authorgroup>
     </info>
     <dedication>
         <para>For all Debian Chinese Users and Developers.</para>
@@ -85,12 +132,79 @@
                 </para>
                 <sect3>
                     <title>Fonts</title>
+                    <itemizedlist>
+                        <listitem>
+                                <package>fonts-wqy-zenhei</package>
+                            <para>
+                                A classic sans-serif style Chinese font used by lots of users.
+                            </para>
+                        </listitem>
+                        <listitem>
+                                <package>fonts-wqy-microhei</package>
+                            <para>
+                                Another widely used classic sans-serif font.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <package>noto-sans-cjk</package>
+                            <para>
+                                    The "Noto" font family with CJK character support.
+                                    This package also provides sans-serif-style fonts.
+                            </para>
+                        </listitem>
+                    </itemizedlist>
+                    <para>
+                            You may experience font selection problem if multiple Chinese
+                            fonts are installed on the system. You may need to adjust
+                            <application>fontconfig</application> configuration according
+                            to your preference.
+                    </para>
                 </sect3>
                 <sect3>
                     <title>Input Method</title>
+                    <itemizedlist>
+                        <listitem>
+                            <package>ibus</package>
+                            <para>
+                                    IBus input method framework with better integration
+                                    with GNOME Desktop Environment. It supports GNOME
+                                    on Wayland.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <package>fcitx</package>
+                            <para>
+                                    Fcitx input method framework. While it has better
+                                    integration with KDE Plasma Desktop, fcitx provides
+                                    integration widgets and extensions on both GNOME and
+                                    KDE Plasma.
+                            </para>
+                            <para>
+                                    Fcitx won't support wayland (with Plasma) before v5.
+                                    Support for GNOME on wayland is not planned.
+                            </para>
+                        </listitem>
+                    </itemizedlist>
                 </sect3>
                 <sect3>
                     <title>Typesetting</title>
+                    <itemizedlist>
+                        <listitem>
+                            <package>texlive-lang-chinese</package>
+                            <para>
+                                    This package contains most of macro packages used
+                                    by Chinese <application>LaTeX</application> users.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <package>texlive-xetex</package>
+                            <para>
+                                    <application>XeLaTeX</application> provides with
+                                    native UTF-8 support and better font selection,
+                                    which would benefit Chinese users.
+                            </para>
+                        </listitem>
+                    </itemizedlist>
                 </sect3>
                 <sect3>
                     <title>Documentation</title>
@@ -113,18 +227,32 @@
                 <para>
                         By setting up correct locale for your system, you may utilize all
                         translated strings of applications and enjoy a Chinese interface.
-                </para>
-                <para>
                         We strongly encourage you to use the UTF-8 encoding. It is now the
                         de-facto standard in the Linux world.
                 </para>
                 <para>
                         The traditional way is to use <command>dpkg-reconfigure</command>
                         with superuser privilege:
-                        <userinput>dpkg-reconfigure locales</userinput>
+                        <code>dpkg-reconfigure locales</code>.
+                </para>
+                <para>
                         The modern way with systemd should use <command>localectl</command>:
+                        <code>localectl set-locale <replaceable>LOCALE_NAME</replaceable></code>
                 </para>
 
+            </sect2>
+            <sect2>
+                <title>Input Method</title>
+                <para>
+                        There are two major input method frameworks in Debian for Chinese:
+                        <application>ibus</application> and <application>fcitx</application>.
+                </para>
+                <sect3>
+                    <title>ibus</title>
+                </sect3>
+                <sect3>
+                    <title>fcitx</title>
+                </sect3>
             </sect2>
             <sect2>
                 <title>DE-specific configuration</title>
@@ -166,42 +294,38 @@
             <sect2>
               <title>Well-maintained packages</title>
               <itemizedlist mark="opencircle">
-                <listitem>debian-zh-faq</listitem>
-                <listitem>fortune-zh</listitem>
-                <listitem>fqterm</listitem>
-                <listitem>iptux</listitem>
-                <listitem>liblunar</listitem>
-                <listitem>lunar-date</listitem>
-                <listitem>manpages-zh</listitem>
-                <listitem>zh-autoconvert</listitem>
-                <listitem>zhcon</listitem>
+                      <listitem><package>debian-zh-faq</package></listitem>
+                      <listitem><package>fortune-zh</package></listitem>
+                      <listitem><package>fqterm</package></listitem>
+                      <listitem><package>iptux</package></listitem>
+                      <listitem><package>liblunar</package></listitem>
+                      <listitem><package>lunar-date</package></listitem>
+                      <listitem><package>manpages-zh</package></listitem>
+                      <listitem><package>zh-autoconvert</package></listitem>
+                      <listitem><package>zhcon</package></listitem>
               </itemizedlist>
             </sect2>
             <sect2>
               <title>Fair-maintained packages in Debian 9</title>
               <itemizedlist mark="opencircle">
-                <listitem>gmchess</listitem>
-                <listitem>lunar</listitem>
-                <listitem>txtreader</listitem>
+                      <listitem><package>gmchess</package></listitem>
+                      <listitem><package>lunar</package></listitem>
+                      <listitem><package>txtreader</package></listitem>
               </itemizedlist>
             </sect2>
             <sect2>
               <title>Poor-maintained packages not in Debian 9</title>
-              <itemizedlist mark="opencircle">
-                <listitem>gemanx-gtk2</listitem>
-                <listitem>libofetion</listitem>
+              <itemizedlist>
+                 <listitem><package>gemanx-gtk2</package></listitem>
+                 <listitem><package>libofetion</package></listitem>
               </itemizedlist>
             </sect2>
         </sect1>
         <sect1>
             <title>Some useful packages outside of Team</title>
-                <itemizedlist mark="opencircle">
-                    <listitem>
-                        <para>opencc</para>
-                    </listitem>
-                    <listitem>
-                        <para>kde-l10n-zhcn</para>
-                    </listitem>
+                <itemizedlist>
+                    <listitem><package>opencc</package></listitem>
+                    <listitem><package>kde-l10n-zhcn</package></listitem>
                 </itemizedlist>
         </sect1>
     </appendix>

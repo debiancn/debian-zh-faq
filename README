@@ -1,12 +1,14 @@
+# Debian Chinese FAQ document
 
-## Dependencies
+## Build Dependencies
 
 * docbook-xsl-ns
 * xsltproc
-* xmlto
 * xmlstarlet (validation)
 * dblatex
 * gettext
+* texlive-xetex
+* texlive-lang-chinese
 
 ## Workflow
 
